@@ -37,7 +37,8 @@
             color: #FFFFFF;
             text-align: center;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1rem;
+            font-family: 'Inconsolata', monospace;
         }
         /* Change the color of links on hover */
         
@@ -111,6 +112,11 @@
         }
         /* Animation for the banner logo */
         
+        h4 {
+            font-family: 'Tangerine', cursive;
+            font-size: 2.5rem;
+        }
+        
         @-webkit-keyframes slide {
             0% {
                 transform: translate(0px, 250px);
@@ -161,6 +167,17 @@
             font-family: Trebuchet Ms;
         }
         /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+        
+        footer {
+            padding: 5px;
+            text-align: center;
+            font-weight: 500;
+            background-color: black;
+            color: #FFFFFF;
+            width: 100%;
+            height: 36px;
+            opacity: 15%;
+        }
         
         @media screen and (max-width: 600px) {
             .nav-list a {
