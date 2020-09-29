@@ -84,3 +84,10 @@
 .old {
     display: inline-flex;
 }
+
+@media screen and (max-width: 600px) {
+    .board h1 {
+        color: black;
+        font-size: 2.5rem;
+    }
+}
