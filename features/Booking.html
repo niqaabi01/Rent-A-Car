@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+
+    <!-- Linking the stylesheets -->
+    <link rel="stylesheet" href="/Styles/background.css">
+    <link rel="stylesheet" href="/Styles/Booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-bar">
+            <div class="logo"><img src="../Cars/PicsArt_09-28-07.13.16.png" alt="" width="65px" height="50px"></div>
+            <div class="nav-list" id="myTopnav">
+                <li><a href="../Index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="./Sign-in.html">Login <i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                <li><a href="./Viewing.html">Viewing</a></li>
+                <li><a href="./Booking.html" class="active">Bookings </a></li>
+                <li><a href="./Dashboard.html">My Dashboard</a></li>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="testbox">
+        <form>
+            <div class="banner">
+                <h1>Vehicle Rental Form</h1>
+            </div>
+            <br/>
+            <fieldset>
+                <legend>Rental Details</legend>
+                <div class="columns">
+                    <div class="item">
+                        <label for="fname">First Name<span>*</span></label>
+                        <input id="fname" type="text" name="fname" />
+                    </div>
+                    <div class="item">
+                        <label for="lname"> Last Name<span>*</span></label>
+                        <input id="lname" type="text" name="lname" />
+                    </div>
+                    <div class="item">
+                        <label for="address">Address<span>*</span></label>
+                        <input id="address" type="text" name="address" />
+                    </div>
+                    <div class="item">
+                        <label for="zip">Zip Code<span>*</span></label>
+                        <input id="zip" type="text" name="zip" required/>
+                    </div>
+                    <div class="item">
+                        <label for="city">City<span>*</span></label>
+                        <input id="city" type="text" name="city" />
+                    </div>
+                    <div class="item">
+                        <label for="state">State<span>*</span></label>
+                        <input id="state" type="text" name="state" />
+                    </div>
+                    <div class="item">
+                        <label for="eaddress">Email Address<span>*</span></label>
+                        <input id="eaddress" type="text" name="address" />
+                    </div>
+                    <div class="item">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input id="phone" type="tel" name="phone" />
+                    </div>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Dates</legend>
+                <div class="columns">
+                    <div class="item">
+                        <label for="checkindate">Pick-up Date <span>*</span></label>
+                        <input id="checkindate" type="date" name="checkindate" />
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="item">
+                        <label for="checkoutdate">Drop-off Date <span>*</span></label>
+                        <input id="checkoutdate" type="date" name="checkoutdate" />
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="item">
+                        <p>Pick-Up Time </p>
+                        <select>
+          <option value="" disabled selected>Select time</option>
+          <option value="1" >Morning</option>
+          <option value="2">Afternoon</option>
+          <option value="3">Evening</option>
+          </select>
+                    </div>
+                    <div class="item">
+                        <p>Drop-off Time </p>
+                        <select>
+          <option  value="4" disabled selected>Select time</option>
+          <option value="5" >Morning</option>
+          <option value="6">Afternoon</option>
+          <option value="7">Evening</option>
+          </select>
+                    </div>
+                    <div class="item">
+                        <p>How many passengers ?</p>
+                        <select>
+          <option value="8" disabled selected>Number of adults</option>
+          <option value="9" >1</option>
+          <option value="10">2</option>
+          <option value="11">3</option>
+          <option value="12">4</option>
+          <option value="13">5</option>
+          </select>
+                    </div>
+                    <div class="item">
+                        <p>If any, How many children?</p>
+                        <select>
+          <option value="14" disabled selected>Number of children</option>
+          <option value="15" >0</option>
+          <option value="16">1</option>
+          <option value="17">2</option>
+          <option value="18">3</option>
+          <option value="19">4</option>
+          <option value="19">5</option>
+          </select>
+                    </div>
+                    <div class="item">
+                        <p>Confirm Vehicle Selection</p>
+                        <select>
+          <option value="20" selected></option>
+          <option value="21">The Mazda MX-5 Miata</option>
+          <option value="22">The Porsche 911</option>
+          <option value="23">The Alpine A110 (2017)</option>
+          <option value="24">The McLaren 570S Spider</option>
+          <option value="25">The Aston Martin DBS Superleggera</option>
+          <option value="26">The Lamborghini Huracan Performante Spider</option>
+          <option value="27">The Audi R8 V10 (2020)</option>
+          <option value="28">The BMW 7 Series</option>
+          <option value="29">The Ferrari 488 Pista V8</option>
+          <option value="30">The Jaguar XJ</option>
+          <option value="31">The Mercedes-Benz S-Class</option>
+          <option value="32">The Porsche Panamera</option>
+          <option value="33">The Rolls-Royce Wraith</option>
+          <option value="34">The Audi A8 2020</option>
+          <option value="35">The Bentley Bentayga</option>
+          </select>
+                    </div>
+                    <div class="item">
+                        <p>Second Choice</p>
+                        <select>
+          <option value="36"  selected></option>
+          <option value="37">The Mazda MX-5 Miata</option>
+          <option value="38">The Porsche 911</option>
+          <option value="39">The Alpine A110 (2017)</option>
+          <option value="40">The McLaren 570S Spider</option>
+          <option value="41">The Aston Martin DBS Superleggera</option>
+          <option value="42">The Lamborghini Huracan Performante Spider</option>
+          <option value="43">The Audi R8 V10 (2020)</option>
+          <option value="44">The BMW 7 Series</option>
+          <option value="45">The Ferrari 488 Pista V8</option>
+          <option value="46">The Jaguar XJ</option>
+          <option value="47">The Mercedes-Benz S-Class</option>
+          <option value="48">The Porsche Panamera</option>
+          <option value="49">The Rolls-Royce Wraith</option>
+          <option value="50">The Audi A8 2020</option>
+          <option value="51">The Bentley Bentayga</option>
+          </select>
+                    </div>
+                </div>
+                <div class="item">
+                    <label for="instruction">Special Instructions</label>
+                    <textarea id="instruction" rows="3"></textarea>
+                </div>
+            </fieldset>
+            <div class="btn-block">
+                <button type="submit" href="/">Submit</button>
+                <a href="/features/Payments.html"> <i class="fa fa-arrow-circle-right" aria-hidden="true" style="color: grey;"></i></a>
+            </div>
+        </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script src="/main.js"></script>
+</body>
+
+</html>

@@ -115,6 +115,7 @@ DIV {
 @media screen and (max-width: 600px) {
     .nav-list a {
         display: none;
+        background-color: black;
     }
     .nav-list a.icon {
         float: right;
